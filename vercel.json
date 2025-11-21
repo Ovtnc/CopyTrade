@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/deposit-monitor.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/deposit-monitor",
+      "dest": "/api/deposit-monitor.js"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/deposit-monitor",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+}
+

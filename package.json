@@ -1,0 +1,30 @@
+{
+  "name": "copystar-blockchain-monitor",
+  "version": "1.0.0",
+  "description": "Blockchain transaction monitor for CopyStar deposits",
+  "main": "controllers/depositMonitor.js",
+  "scripts": {
+    "start": "node controllers/depositMonitor.js",
+    "dev": "nodemon controllers/depositMonitor.js"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "bsc",
+    "tron",
+    "deposit",
+    "monitor"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^3.6.5",
+    "web3": "^4.3.0",
+    "tronweb": "^5.3.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
+

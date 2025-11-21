@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build files
+.vercel/
+dist/
+build/
+
+# Database
+*.sql
+*.db
+
+# Temporary files
+*.tmp
+*.temp
+cstarzip.zip
+
+# Sensitive files
+__cs/c.php
+__cs/c.php.CANLI_SUNUCU
+

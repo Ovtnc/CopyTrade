@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# Default charset UTF-8
+AddDefaultCharset UTF-8
+
+# __cs klasörünü gizle
+RewriteCond %{REQUEST_URI} ^/__cs/ [NC]
+RewriteRule ^__cs/.*$ - [F,L]
+
+# Tüm istekleri index.php'ye yönlendir
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?p=$1 [QSA,L]
+
+# Güvenlik için bazı dosyaları gizle
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<Files "*.sql">
+    Order Allow,Deny
+    Deny from all
+</Files>

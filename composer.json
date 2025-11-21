@@ -1,0 +1,15 @@
+{
+    "name": "copystar/email-verification",
+    "description": "CopyStar Email Verification System",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "sendgrid/sendgrid": "^8.0"
+    },
+    "autoload": {
+        "files": [
+            "__cs/email.php"
+        ]
+    }
+}
+
